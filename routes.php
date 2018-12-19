@@ -2,10 +2,15 @@
 
 
 Route::get('/login', function(){
-	return 'abc.com/login.php';
+	//logic here
+
+	set_session('user');
 });
 
 
 Route::get('/logout', function(){
-	return 'abc.com/logout.php';
+	//logout here
+	
+	session_destroy();
+
 });
